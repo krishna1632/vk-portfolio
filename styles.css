@@ -496,3 +496,77 @@ textarea:focus {
   color: #45436a;
   font-family: "Playfair Display", serif;
 }
+
+@media (min-width: 400px) {
+  section .hero-container {
+    font-size: 18px;
+  }
+}
+
+/* Mobile-specific timeline fixes */
+@media (max-width: 767px) {
+  /* Experience section mobile fixes */
+  #experience .max-w-4xl.mx-auto.relative {
+    padding-left: 1.5rem;
+  }
+
+  #experience .absolute.left-0 {
+    left: 0.5rem;
+  }
+
+  #experience .flex.flex-col.md\:flex-row {
+    margin-bottom: 2rem;
+  }
+
+  #experience .md\:w-1\/2 {
+    width: 100%;
+    padding: 0;
+  }
+
+  #experience .order-1 {
+    order: 1;
+    margin-bottom: 1rem;
+  }
+
+  #experience .order-2 {
+    order: 2;
+  }
+
+  /* Ensure proper spacing for the GD Goenka University badge */
+  #experience .bg-secondary\/10 {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Timeline dot positioning */
+  #experience .absolute.left-0.md\:left-1\/2 {
+    left: 0.5rem;
+  }
+
+  #experience .-ml-2 {
+    margin-left: 0;
+  }
+}
+
+/* Desktop timeline styling */
+@media (min-width: 768px) {
+  #experience .md\:w-1\/2 {
+    width: 50%;
+  }
+
+  #experience .md\:pr-8 {
+    padding-right: 2rem;
+  }
+
+  #experience .md\:pl-8 {
+    padding-left: 2rem;
+  }
+
+  #experience .md\:text-right {
+    text-align: right;
+  }
+
+  #experience .absolute.left-0.md\:left-1\/2 {
+    left: 50%;
+  }
+}
